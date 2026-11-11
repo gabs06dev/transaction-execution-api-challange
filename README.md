@@ -38,8 +38,7 @@ a detectar errores de sintaxis asi como detectar casos no considerados dentro de
 de realizar pruebas y detectar que el resultado no era el correcto, se utilizaron para detectar en menor tiempo el problema y solucionarlo.
 
 ## Dependencias Utilizadas
-- **Spring Boot**: Core framework for building the application.
-- **Spring WebMVC**: For building RESTful APIs.
+- **Spring Boot**: Framework para el desarrollo, que permite crear aplicaciones de manera rapida y sencilla, ademas de contar con una gran cantidad de dependencias que facilitan el desarrollo.
 - **Spring Data JPA**: Al utilizar postgres como base de datos, se aprovecho la flexibilidad que provee JPA para realizar consultas 
 e implementar filtros de busqueda
 - **OpenFeign**: Al utilizar esta depedencia para la comunicacion con servicios externos se logra tener una implementacion mas limpia 
