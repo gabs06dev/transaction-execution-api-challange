@@ -1,0 +1,27 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/provider/v1/execute",
+        "bodyPatterns": [
+          {
+            "equalToJson": {
+              "accountId": "acc-123456",
+              "type": "CREDIT",
+              "amount": 1600,
+              "currency": "MXN"
+            }
+          }
+        ]
+      },
+      "response": {
+        "status": 409,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "status": "REJECTED",
+          "code": "INSUFFICIENT_FUNDS",
+          "message": "The account does not have enough balance to complete the transaction"
+        }
+      }
+  }
