@@ -1,6 +1,10 @@
+server:
+  port: 8085
+
 spring:
   application:
     name: transactionExecution
+
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: ''
@@ -14,3 +18,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+provider:
+  account:
+    url: http://localhost:8081
